@@ -7,7 +7,7 @@ const ImageEnlarger = function($rootScope, $stateParams, Util) {
     var header = document.querySelectorAll('#header-dip');
     var active = false;
     var currentScroll = null;
-    var article = document.querySelector('.story-article');
+    //var article = document.querySelector('.story-article');
 
 
 //    todo: disable listener if view port is less then 1024 +/-
@@ -111,11 +111,11 @@ const ImageEnlarger = function($rootScope, $stateParams, Util) {
     }
 
     self.animateNavs = function(){   //todo - implement a nav animation when it's visible
-        let navBar = document.querySelector('#header-dip');
-        let adHeight = navBar.querySelector('.ad-wrapper').offsetHeight;  // no adds here - carryover from http://www.fastcodesign.com/3056993/the-precarious-state-of-logo-design/3
+        //let navBar = document.querySelector('#header');
+        //let adHeight = navBar.querySelector('.ad-wrapper').offsetHeight; 
         let currentY = window.scrollY;
 
-        navBar.style.position = 'static';
+        //navBar.style.position = 'static';
 
         if (adHeight < currentY) {
             this.navs.forEach(function (nav) {
